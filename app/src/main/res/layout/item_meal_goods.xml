@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:gravity="center_vertical"
+    android:padding="25px">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/iv_image"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_1"
+        app:layout_auto_basewidth="height"
+        app:sriv_left_bottom_corner_radius="5px"
+        app:sriv_left_top_corner_radius="5px"
+        app:sriv_right_bottom_corner_radius="5px"
+        app:sriv_right_top_corner_radius="5px" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="8px"
+        android:paddingBottom="8px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5px"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="尊尼获加洋酒 威士忌 黑方 黑牌 调配型苏格兰威士700ml.."
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_26" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£0.00"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_one_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/a_one_goods"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="140px"
+        android:layout_marginLeft="10px"
+        android:text="x0"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_28" />
+
+
+</LinearLayout>

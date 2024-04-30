@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:layout_marginBottom="25px"
+        android:text="@string/a_confirm_send_end" />
+</LinearLayout>

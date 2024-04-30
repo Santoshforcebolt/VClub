@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="707px"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="106px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/a_get_discount_ticket"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_32"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="46px"
+            android:layout_height="46px"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="25px"
+            android:padding="5px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/close_gray" />
+    </FrameLayout>
+
+    <include layout="@layout/common_refresh" />
+
+</LinearLayout>

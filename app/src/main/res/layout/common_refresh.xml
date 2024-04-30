@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sky.widget.cluster.refresh.NestedRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:winds="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mNestedRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    winds:pullMaxHeight="100dp"
+    winds:pullViewHeight="80dp">
+
+    <include layout="@layout/common_recycler"/>
+</com.sky.widget.cluster.refresh.NestedRefreshLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white_r30"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:background="@drawable/shop_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="72px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_bg_white_r88"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26px"
+                android:layout_height="26px"
+                android:src="@drawable/icon_find"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="@string/a_input_goods_tip"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <com.sky.widget.autolayout.widget.AutoCardView
+            android:layout_width="match_parent"
+            android:layout_height="270px"
+            android:layout_marginTop="30px"
+            app:cardCornerRadius="10px">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/mBGABanner"
+                android:layout_width="match_parent"
+                android:layout_height="270px"
+                android:background="@drawable/ic_placeholder_2"
+                android:src="@drawable/ic_placeholder_2"
+                app:banner_pageChangeDuration="1000"
+                app:banner_placeholderDrawable="@drawable/ic_placeholder_2"
+                app:banner_pointAutoPlayAble="true"
+                app:banner_pointLeftRightMargin="15px"
+                app:banner_pointTopBottomMargin="15px"
+                app:banner_transitionEffect="defaultEffect" />
+        </com.sky.widget.autolayout.widget.AutoCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:paddingBottom="50px"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+
+</FrameLayout>

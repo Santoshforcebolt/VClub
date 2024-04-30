@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="40px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px" />
+
+    <EditText
+        android:id="@+id/et_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:hint="请输入您想要进入的host地址"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:textSize="26px" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        style="@style/ButtonStyle"
+        android:text="进入应用" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:text="备注：\n        此版本仅供内部测试使用，请勿发布传播。首次进入需选择或者输入站点，下次进入默认记录上次选择的站点，如需切换，请手动选择。若沒有想要进入的站点，请手动输入，点击进入即可"
+        android:textColor="@color/textMain"
+        android:textSize="26px" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:text="当前版本：1.0.6"
+        android:textColor="@color/textMain"
+        android:textSize="26px" />
+</LinearLayout>

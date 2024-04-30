@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBack"
+        android:paddingTop="30px"
+        android:paddingBottom="30px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_bg_white_r30"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="7px">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="134px"
+                    android:layout_height="134px"
+                    android:background="@drawable/ic_placeholder_1"
+                    android:scaleType="centerCrop"
+                    app:layout_auto_basewidth="height" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="5px"
+                        android:maxLines="2"
+                        android:text="Whisky Reviews for Springbank 16-year-oldScored this whisky  "
+                        android:textColor="@color/textSuper"
+                        android:textSize="@dimen/size_28" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40px"
+                        android:layout_marginTop="5px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_volume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_bg_white_r88"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:paddingLeft="13px"
+                            android:paddingRight="13px"
+                            android:text="0ml"
+                            android:textColor="@color/textLesser"
+                            android:textSize="@dimen/size_24" />
+
+                        <TextView
+                            android:id="@+id/tv_degree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15px"
+                            android:background="@drawable/shape_bg_white_r88"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:paddingLeft="13px"
+                            android:paddingRight="13px"
+                            android:text="0%vol"
+                            android:textColor="@color/textLesser"
+                            android:textSize="@dimen/size_24" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15px"
+                            android:background="@drawable/shape_bg_white_r88"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:paddingLeft="13px"
+                            android:paddingRight="13px"
+                            android:text="2008"
+                            android:textColor="@color/textLesser"
+                            android:textSize="@dimen/size_24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_evaluate"
+                    android:layout_width="88px"
+                    android:layout_height="88px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="13px"
+                    android:background="@drawable/shape_border_brown_dot"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="0"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_34"
+                    app:layout_auto_basewidth="height" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Delicious filling of a spring bench. For me rather barrel-and the typical spring bench character is there, but is a bit the background. The sharper, more  palate a little water."
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_color_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <com.sky.widget.component.HorizontalProgressBar
+                    android:id="@+id/colorProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10px"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    app:hpb_bg_color="@color/colorPressed"
+                    app:hpb_max="100"
+                    app:hpb_pb_color="@color/textSuper"
+                    app:hpb_progress="60" />
+
+                <TextView
+                    android:id="@+id/tv_color_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="60"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_color_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="The wine has a clean taste and a lovely golden colour."
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_smell_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <com.sky.widget.component.HorizontalProgressBar
+                    android:id="@+id/smellProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10px"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    app:hpb_bg_color="@color/colorPressed"
+                    app:hpb_max="100"
+                    app:hpb_pb_color="@color/textSuper"
+                    app:hpb_progress="60" />
+
+                <TextView
+                    android:id="@+id/tv_smell_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="60"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_smell_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="Lovely warm honey, dried fruit and malt. A drop of water brings out some delicate herbal notes."
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_taste_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <com.sky.widget.component.HorizontalProgressBar
+                    android:id="@+id/tasteProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10px"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    app:hpb_bg_color="@color/colorPressed"
+                    app:hpb_max="100"
+                    app:hpb_pb_color="@color/textSuper"
+                    app:hpb_progress="60" />
+
+                <TextView
+                    android:id="@+id/tv_taste_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="60"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_taste_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="Lovely warm honey, dried fruit and malt. A drop of water brings out some delicate herbal notes."
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_rhyme_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <com.sky.widget.component.HorizontalProgressBar
+                    android:id="@+id/rhymeProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="10px"
+                    android:layout_marginLeft="20px"
+                    android:layout_weight="1"
+                    app:hpb_bg_color="@color/colorPressed"
+                    app:hpb_max="100"
+                    app:hpb_pb_color="@color/textSuper"
+                    app:hpb_progress="60" />
+
+                <TextView
+                    android:id="@+id/tv_rhyme_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="60"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_rhyme_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:text="Lovely warm honey, dried fruit and malt. A drop of water brings out some delicate herbal notes."
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <LinearLayout
+                android:id="@+id/layout_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="英国伦敦 曼彻斯特城市学院"
+                android:textColor="#586B96"
+                android:textSize="@dimen/size_24"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="15px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="13 Jun 2020 8:39 pm"
+                    android:textColor="@color/textLesser"
+                    android:textSize="@dimen/size_24" />
+
+                <LinearLayout
+                    android:id="@+id/ll_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26px"
+                        android:layout_height="26px"
+                        android:src="@drawable/selector_love" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18px"
+                        android:text="@string/a_love"
+                        android:textColor="@color/textMain"
+                        android:textSize="@dimen/size_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="88px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="26px"
+                        android:layout_height="26px"
+                        android:src="@drawable/selector_wish_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18px"
+                        android:text="@string/a_wish_list"
+                        android:textColor="@color/textMain"
+                        android:textSize="@dimen/size_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.core.widget.NestedScrollView>

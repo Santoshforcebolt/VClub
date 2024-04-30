@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="25px"
+    android:paddingRight="25px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_receive_people_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLength="20"
+            android:text=""
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_tel_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/a_tel"
+            android:lines="1"
+            android:text="+44"
+            android:inputType="phone"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_province_city_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/a_click_select"
+            android:lines="1"
+            android:maxLength="25"
+            android:text=""
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+        <ImageView
+            android:layout_width="12px"
+            android:layout_height="22px"
+            android:src="@drawable/arrow_right_little" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_detail_address_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:text="@string/a_save" />
+
+</LinearLayout>

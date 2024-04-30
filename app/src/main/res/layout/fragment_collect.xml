@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="400px"
+            android:maxLines="1"
+            android:text="@string/a_collect"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginBottom="1px"
+        android:background="@color/colorFore"
+        android:divider="@drawable/shape_divider_line"
+        android:dividerPadding="25px"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_wine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a_whisky"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_wine_bucket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a_whisky_wine_bucket"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="@dimen/size_30" />
+    </LinearLayout>
+
+    <com.sky.widget.component.SolveViewPager
+        android:id="@+id/mSolveViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

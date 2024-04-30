@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_divider_line"
+        android:orientation="vertical"
+        android:showDividers="middle|beginning|end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFore"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv_header"
+                android:layout_width="126px"
+                android:layout_height="126px"
+                android:layout_marginTop="30px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_header"
+                app:layout_auto_basewidth="height"
+                app:sriv_oval="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28px"
+                android:layout_marginBottom="34px"
+                android:text="@string/a_click_change_header"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="25px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_member_name_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_member_nick_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <EditText
+                android:id="@+id/et_nick"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_email_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_my_sex_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_birthday_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_tel_number_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_pay_password_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_pay_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:text="******"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_pay_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_change"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_login_password_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_login_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:text="******"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_login_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_change"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_current_country_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_down"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_choose_country"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_detail_address_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/a_input_address"
+                android:maxLines="2"
+                android:lines="2"
+                android:paddingLeft="30px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_30" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="30px"
+            android:text="@string/a_save" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="188px"
+    android:background="@color/colorFore"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBack" />
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_1"
+        app:layout_auto_basewidth="height"
+        app:sriv_left_bottom_corner_radius="2px"
+        app:sriv_left_top_corner_radius="2px"
+        app:sriv_right_bottom_corner_radius="2px"
+        app:sriv_right_top_corner_radius="2px" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="33px"
+        android:layout_toRightOf="@+id/iv_goods"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_30"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/tv_service_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="5px"
+        android:layout_toRightOf="@+id/iv_goods"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_26"
+        tools:text="member" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_service_member"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/iv_goods"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_26"
+        tools:text="1" />
+</RelativeLayout>

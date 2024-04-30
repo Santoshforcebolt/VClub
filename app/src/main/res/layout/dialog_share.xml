@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="348px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorFore"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="87px"
+        android:background="@color/colorBack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:text="@string/a_share"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_32" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="20px"
+            android:padding="10px"
+            android:src="@drawable/close_gray" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_facebook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="98px"
+                android:layout_height="98px"
+                android:scaleType="centerCrop"
+                app:layout_auto_basewidth="height"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="@string/a_share_to_friend"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="98px"
+                android:layout_height="98px"
+                app:layout_auto_basewidth="height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/poster" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="@string/a_crate_share_poster"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

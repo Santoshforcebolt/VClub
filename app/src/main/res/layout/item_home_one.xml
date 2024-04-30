@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:paddingLeft="25px"
+    android:paddingRight="25px"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40px"
+        android:paddingBottom="40px">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="273px"
+            android:layout_height="203px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_1"
+            app:sriv_left_bottom_corner_radius="5px"
+            app:sriv_left_top_corner_radius="5px"
+            app:sriv_right_bottom_corner_radius="5px"
+            app:sriv_right_top_corner_radius="5px" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="203px"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:paddingBottom="14px">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6px"
+                android:ellipsize="end"
+                android:lineSpacingExtra="10px"
+                android:maxLines="2"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_32"
+                android:textStyle="bold"
+                tools:text="复旦大学郑磊教授：我们需要开放有温度的数据" />
+
+            <TextView
+                android:id="@+id/tv_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_time"
+                android:layout_marginBottom="18px"
+                android:lines="1"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_22"
+                tools:text=" 900万次观看" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:lines="1"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_22"
+                tools:text="2020-11-5 15:00" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

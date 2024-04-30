@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:paddingLeft="25px"
+    android:paddingRight="25px"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40px"
+        android:paddingBottom="40px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="10px"
+            android:lines="1"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_32"
+            android:textStyle="bold"
+            tools:text="复旦大学郑磊教授：我们需要开放有温度的数据" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_marginTop="35px">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv_one"
+                android:layout_width="0dp"
+                android:layout_height="160px"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_1"
+                app:sriv_left_bottom_corner_radius="5px"
+                app:sriv_left_top_corner_radius="5px"
+                app:sriv_right_bottom_corner_radius="5px"
+                app:sriv_right_top_corner_radius="5px" />
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv_two"
+                android:layout_width="0dp"
+                android:layout_height="160px"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_1"
+                app:sriv_left_bottom_corner_radius="5px"
+                app:sriv_left_top_corner_radius="5px"
+                app:sriv_right_bottom_corner_radius="5px"
+                app:sriv_right_top_corner_radius="5px" />
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv_three"
+                android:layout_width="0dp"
+                android:layout_height="160px"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                app:sriv_left_bottom_corner_radius="5px"
+                app:sriv_left_top_corner_radius="5px"
+                app:sriv_right_bottom_corner_radius="5px"
+                app:sriv_right_top_corner_radius="5px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:lines="1"
+            android:text=" 9k views  09 JUL 2020 2:58 PM"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_22" />
+
+    </LinearLayout>
+
+</LinearLayout>

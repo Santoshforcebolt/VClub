@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFore"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorFore" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_divider_line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="10px"
+                android:padding="15px"
+                android:src="@drawable/arrow_left" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="70px"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_gray_r10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="22px"
+                android:paddingRight="22px">
+
+                <ImageView
+                    android:layout_width="33px"
+                    android:layout_height="33px"
+                    android:src="@drawable/icon_find"
+                    app:layout_auto_basewidth="height" />
+
+                <EditText
+                    android:id="@+id/et_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18px"
+                    android:background="@null"
+                    android:hint="@string/a_input_keyword"
+                    android:lines="1"
+                    android:textColor="@color/textMain"
+                    android:textColorHint="@color/textLesser"
+                    android:textSize="@dimen/size_30" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="@string/a_search"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px">
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/a_history_search_"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/size_26" />
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:scaleType="centerCrop"
+                    android:padding="10px"
+                    android:src="@drawable/delete_gray" />
+            </LinearLayout>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/mTagFlowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:layout_marginBottom="25px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.easyder.club">
+
+    <uses-sdk android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+        tools:node="remove" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/SwipeThemeT"
+        android:usesCleartextTraffic="true"
+        tools:ignore="Instantiatable">
+        <activity
+            android:name=".module.common.SplashActivity"
+            android:exported="true"
+            android:theme="@style/TransTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".module.common.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale|layoutDirection"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".module.me.LoginActivity" />
+
+        <activity android:name=".module.home.TestActivity" />
+        <activity android:name=".module.common.RegisterActivity" />
+        <activity android:name=".module.enjoy.PublishEnjoyActivity" />
+        <activity android:name=".module.enjoy.EnjoyDetailActivity" />
+        <activity android:name=".module.enjoy.LocationActivity" />
+        <activity android:name=".module.enjoy.EnjoyListActivity" />
+        <activity android:name=".module.me.MyAppointActivity" />
+        <activity android:name=".module.me.FeedbackActivity" />
+        <activity android:name=".module.me.PersonActivity" />
+        <activity android:name=".module.me.MyIntegralActivity" />
+        <activity android:name=".module.me.BalanceActivity" />
+        <activity android:name=".module.me.AppointActivity" />
+        <activity android:name=".module.me.StoreListActivity" />
+        <activity android:name=".module.me.RechargeActivity" />
+        <activity android:name=".module.me.VClubSchoolActivity" />
+        <activity android:name=".module.me.SetActivity" />
+        <activity android:name=".module.me.DeliveryActivity" />
+        <activity android:name=".module.me.IntegralShopActivity" />
+        <activity android:name=".module.me.SpreadActivity" />
+        <activity
+            android:name=".module.me.InviteActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout"
+            android:maxAspectRatio="2"
+            android:resizeableActivity="false" />
+        <activity android:name=".module.me.ExtractEarningsActivity" />
+        <activity android:name=".module.me.SpreadHistoryActivity" />
+        <activity android:name=".module.me.SpreadOrderActivity" />
+        <activity android:name=".module.me.FlashSaleActivity" />
+        <activity android:name=".module.me.NewAddressActivity" />
+        <activity android:name=".module.shop.PaySuccessActivity" />
+        <activity android:name=".module.shop.PayActivity" />
+        <activity android:name=".module.shop.ChooseTicketActivity" />
+        <activity android:name=".module.shop.ConfirmOrderActivity" />
+        <activity android:name=".module.shop.ShopCarActivity" />
+        <activity android:name=".module.me.AddressListActivity" />
+        <activity android:name=".module.me.order.ShopOrderActivity" />
+        <!--异地登录-->
+        <activity
+            android:name=".module.common.AlertActivity"
+            android:theme="@style/AlertTheme" />
+        <activity android:name=".module.me.ChangeTelActivity" />
+        <activity android:name=".module.me.ChangePassWordActivity" />
+        <activity android:name=".module.home.MessageListActivity" />
+        <activity android:name=".module.home.MessageDetailActivity" />
+        <activity android:name=".module.home.NewsDetailActivity" />
+        <activity android:name=".module.me.order.StoreOrderActivity" />
+        <activity android:name=".module.me.MyTicketActivity" />
+        <activity android:name=".module.shop.GetTicketCenterActivity" />
+        <activity android:name=".module.shop.LimitBuyActivity" />
+        <activity android:name=".module.shop.GoodsDetailActivity" />
+        <activity android:name=".module.me.IntegralExchangeActivity" />
+        <activity android:name=".module.me.order.ShopOrderDetailActivity" />
+        <activity android:name=".module.shop.GoodsListActivity" />
+        <activity android:name=".module.shop.MealActivity" />
+        <activity android:name=".module.shop.MealDetailActivity" />
+        <activity android:name=".module.shop.SearchActivity" />
+        <activity android:name=".module.common.ImagePreviewActivity" />
+        <activity android:name=".module.me.ShopListActivity" />
+        <activity android:name=".module.me.order.ApplyRefundActivity" />
+        <activity android:name=".module.me.order.RefundOrderActivity" />
+        <activity android:name=".module.me.order.RefundDetailActivity" />
+        <activity android:name=".module.me.order.StoreOrderDetailActivity" />
+        <activity android:name=".module.shop.ScriptPayActivity" />
+        <activity android:name=".module.me.TotalEarningsActivity" />
+        <activity android:name=".module.me.YetEarningsActivity" />
+
+        <provider
+            android:name=".utils.MyProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="name,resource" />
+        </provider>
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
+        <!--适配全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <!--适配华为(hua wei)刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!--适配小米(xiao mi)刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sky.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/iv_image"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:layout_marginTop="25px"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_placeholder_1"
+        app:layout_auto_basewidth="height"
+        app:sriv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:clickable="false"
+        android:text=""
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_24" />
+
+</com.sky.widget.autolayout.AutoLinearLayout>

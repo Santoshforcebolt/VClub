@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="510px"
+        android:background="@drawable/my_integral_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_current_month_earnings"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_26" />
+
+        <TextView
+            android:id="@+id/tv_month_earnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="0.00"
+            android:textColor="@color/colorFore"
+            android:textSize="74px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_extract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_bg_white_r5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="24px"
+            android:paddingTop="12px"
+            android:paddingRight="24px"
+            android:paddingBottom="12px"
+            android:text="@string/a_extract_earnings"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_28" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_total_earnings"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/a_total_earnings"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_24" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0.00"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_34"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/a_can_extract_earnings"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_24" />
+
+                <TextView
+                    android:id="@+id/tv_can"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0.00"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_34"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yet_extract"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/a_yet_extract_earnings"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_24" />
+
+                <TextView
+                    android:id="@+id/tv_yet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0.00"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_34"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="285px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:divider="@drawable/shape_divider_line_light"
+            android:showDividers="middle"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/a_spread_members"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_26" />
+
+                <TextView
+                    android:id="@+id/tv_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0"
+                    android:textColor="@color/textMain"
+                    android:textSize="52px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_member_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:background="@drawable/shape_bg_brown_r8"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingLeft="24px"
+                    android:paddingTop="12px"
+                    android:paddingRight="24px"
+                    android:paddingBottom="12px"
+                    android:text="@string/a_look_detail"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/a_spread_order"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_26" />
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0"
+                    android:textColor="@color/textMain"
+                    android:textSize="52px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_order_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:background="@drawable/shape_bg_brown_r8"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingLeft="24px"
+                    android:paddingTop="12px"
+                    android:paddingRight="24px"
+                    android:paddingBottom="12px"
+                    android:text="@string/a_look_detail"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_24" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fl_invite"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_marginTop="25px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:paddingLeft="35px"
+            android:paddingRight="35px">
+
+            <ImageView
+                android:layout_width="57px"
+                android:layout_height="57px"
+                android:layout_centerVertical="true"
+                app:layout_auto_basewidth="height"
+                android:background="@drawable/person_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:layout_marginTop="30px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/a_now_invite"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="120px"
+                android:layout_marginBottom="30px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/a_invite_friends"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_22" />
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="22px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arrow_right_little" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

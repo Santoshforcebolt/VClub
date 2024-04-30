@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88px"
+    android:layout_marginLeft="20px"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg_brown_gray"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="name "
+        android:textColor="@color/selector_white_gray"
+        android:textSize="@dimen/size_26" />
+</LinearLayout>

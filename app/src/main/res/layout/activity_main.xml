@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <com.sky.widget.component.ScrollableViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.sky.widget.cluster.tabbar.TabBar
+        android:id="@+id/mTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="@color/colorFore" />
+
+
+</LinearLayout>

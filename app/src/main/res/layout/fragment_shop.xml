@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:text="VClub"
+        android:gravity="center"
+        android:background="#2C3340"
+        android:textColor="@color/colorFore"
+        android:textSize="@dimen/size_36" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_refresh" />
+
+        <FrameLayout
+            android:id="@+id/fl_car"
+            android:layout_width="127px"
+            android:layout_height="127px"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10px"
+            android:layout_marginBottom="90px"
+            android:background="@drawable/shop_car_circle"
+            app:layout_auto_basewidth="height">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10px"
+                android:background="@drawable/shape_border_red_r14"
+                android:gravity="center"
+                android:visibility="gone"
+                android:minWidth="40px"
+                android:minHeight="20px"
+                android:text="3"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_22" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

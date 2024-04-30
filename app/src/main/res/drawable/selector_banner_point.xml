@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/home19b" android:state_enabled="true" />
+    <item android:drawable="@drawable/home19" />-->
+
+    <item android:state_enabled="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorBG" />
+            <size android:width="16px" android:height="16px"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/colorFore" />
+            <size android:width="16px" android:height="16px"/>
+        </shape>
+    </item>
+
+</selector>

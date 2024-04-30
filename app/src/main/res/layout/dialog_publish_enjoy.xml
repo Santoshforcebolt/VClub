@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="630px"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="505px"
+        android:background="@color/colorFore"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="@string/a_publish_enjoy"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320px"
+            android:layout_marginTop="65px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_find"
+                android:layout_width="320px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/shape_bg_gray_r10"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_auto_basewidth="height">
+
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="125px"
+                    android:background="@drawable/find"
+                    app:layout_auto_basewidth="height" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:layout_marginTop="33px"
+                    android:text="@string/a_find_whisky"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/size_30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_create"
+                android:layout_width="320px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:background="@drawable/shape_bg_gray_r10"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_auto_basewidth="height">
+
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="125px"
+                    android:background="@drawable/add"
+                    android:scaleType="centerCrop"
+                    app:layout_auto_basewidth="height" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:text="@string/a_add_wine"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/size_30" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="103px"
+        android:layout_gravity="bottom"
+        android:background="@color/colorFore"
+        android:text="@string/a_cancel"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_30" />
+
+</FrameLayout>

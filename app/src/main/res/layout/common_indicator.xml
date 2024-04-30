@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/mIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="82px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@drawable/shape_divider_line" />
+
+    <com.sky.widget.component.SolveViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

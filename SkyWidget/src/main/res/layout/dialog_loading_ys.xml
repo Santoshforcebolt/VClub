@@ -1,0 +1,29 @@
+<com.sky.widget.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ProgressBar
+        android:id="@+id/loading_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="196px"
+        android:layout_height="196px"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/ic_refresh_sky"
+        android:visibility="visible"
+        app:layout_auto_basewidth="height" />
+
+    <TextView
+        android:id="@+id/loading_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/a_loading"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_28" />
+
+</com.sky.widget.autolayout.AutoFrameLayout>

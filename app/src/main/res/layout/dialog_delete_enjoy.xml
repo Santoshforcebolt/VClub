@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="586px"
+    android:layout_height="316px"
+    android:background="@drawable/shape_bg_white_r5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/a_confirm_delete_current_enjoy_"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginBottom="45px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_border_gray_r5"
+            android:text="@string/a_cancel"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_30" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_bg_brown_r5"
+            android:text="@string/a_confirm"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+    </LinearLayout>
+
+</LinearLayout>

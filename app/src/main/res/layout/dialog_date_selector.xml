@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="750px"
+    android:background="@drawable/shape_bg_white_r5"
+    android:divider="@drawable/shape_divider_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/a_choose_date"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_32" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.sky.widget.usage.wheel.WheelView
+            android:id="@+id/wv_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45px"
+            android:layout_weight="1" />
+
+        <com.sky.widget.usage.wheel.WheelView
+            android:id="@+id/wv_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_weight="1" />
+
+        <com.sky.widget.usage.wheel.WheelView
+            android:id="@+id/wv_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="45px"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0px"
+            android:layout_height="80px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_gray_r88"
+            android:gravity="center"
+            android:text="@string/a_cancel"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0px"
+            android:layout_height="80px"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_brown_r80"
+            android:gravity="center"
+            android:text="@string/a_confirm"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+</LinearLayout>

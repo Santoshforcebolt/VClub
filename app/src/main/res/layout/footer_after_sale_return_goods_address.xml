@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="164px"
+    android:layout_marginTop="20px"
+    android:background="@color/colorFore">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24px"
+        android:layout_marginTop="32px"
+        android:text="@string/a_exit_goods_address_"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_28" />
+
+    <TextView
+        android:id="@+id/tv_customer_name_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="189px"
+        android:layout_marginTop="32px"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_28"
+        tools:text="易得公司  0769-88888888" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="189px"
+        android:layout_marginTop="82px"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_24"
+        tools:text="广东省东莞市南城区光长路东莞市南城区光长路东莞市南城区光长路33号" />
+</RelativeLayout>

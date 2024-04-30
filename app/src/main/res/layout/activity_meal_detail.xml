@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/colorFore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="40px"
+                android:paddingBottom="40px">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_placeholder_1"
+                    app:layout_auto_basewidth="height"
+                    app:sriv_left_bottom_corner_radius="5px"
+                    app:sriv_left_top_corner_radius="5px"
+                    app:sriv_right_bottom_corner_radius="5px"
+                    app:sriv_right_top_corner_radius="5px" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:text="尊尼获加洋酒 威士忌 黑方 黑牌组合"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_34" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:text="3商品"
+                    android:textColor="@color/textLesser"
+                    android:textSize="@dimen/size_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/colorFore"
+                android:divider="@drawable/shape_divider_line_light"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <LinearLayout
+                android:background="@color/colorFore"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="25px"
+                android:paddingRight="25px">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£0.00"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/size_30" />
+
+                <TextView
+                    android:id="@+id/tv_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_weight="1"
+                    android:text="@string/a_sale"
+                    android:textColor="@color/textLesser"
+                    android:textSize="@dimen/size_22" />
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sheng"
+                    app:layout_auto_basewidth="height" />
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="£0.00"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/size_26" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFore"
+        android:divider="@drawable/shape_divider_line_light"
+        android:dividerPadding="18px"
+        android:gravity="center_vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="126px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tab_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="@string/a_home"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorRed"
+            android:text="@string/a_now_buy"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+</LinearLayout>

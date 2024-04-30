@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/colorFore">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="400px"
+            android:maxLines="1"
+            android:text="@string/a_enjoy"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="46px">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:padding="15px"
+                android:src="@drawable/red_edit"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_go_enjoy"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginTop="2px"
+        android:background="@color/colorFore"
+        android:divider="@drawable/shape_divider_line"
+        android:dividerPadding="23px"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_my_enjoy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a_my_enjoy"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_my_love"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a_my_favorite"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_my_wish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/a_wish_list"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <com.sky.widget.component.SolveViewPager
+        android:id="@+id/mSolveViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sky.widget.component.SolveViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20px"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="25px"
+        android:src="@drawable/return_white" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="130px"
+        android:layout_height="45px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30px"
+        android:background="@drawable/shape_bg_brown_r5"
+        android:gravity="center"
+        android:text="@string/a_save"
+        android:textColor="@color/colorFore"
+        android:textSize="@dimen/size_26" />
+</RelativeLayout>

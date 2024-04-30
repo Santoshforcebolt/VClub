@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="255px"
+    android:layout_marginLeft="20px"
+    android:layout_marginRight="20px"
+    android:layout_marginTop="20px"
+    android:background="@drawable/ticket_bg"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="30px">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="120px"
+        android:layout_height="87px"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/cash_ticket"
+        app:layout_auto_basewidth="height" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="name"
+        android:textColor="@color/textSuper"
+        android:textSize="@dimen/size_36" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="20px"
+        android:text="desc"
+        android:textColor="@color/textLesser"
+        android:textSize="@dimen/size_24" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="1970/00/00-1970/00/00"
+        android:textColor="@color/textLesser"
+        android:textSize="@dimen/size_22" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40px"
+        android:padding="5px"
+        android:layout_marginBottom="10px"
+        android:src="@drawable/selector_select"
+        app:layout_auto_basewidth="height" />
+
+
+</RelativeLayout>

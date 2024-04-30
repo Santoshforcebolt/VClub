@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:background="@drawable/shape_bg_white_r30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="25px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64px"
+                android:layout_height="42px"
+                android:background="@drawable/festival_left" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:text="@string/a_festival_activity"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_34"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="64px"
+                android:layout_height="42px"
+                android:background="@drawable/festival_right" />
+        </LinearLayout>
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="310px"
+            android:layout_marginTop="40px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_2"
+            app:sriv_left_bottom_corner_radius="5px"
+            app:sriv_left_top_corner_radius="5px"
+            app:sriv_right_bottom_corner_radius="5px"
+            app:sriv_right_top_corner_radius="5px" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="138px"
+            android:layout_marginTop="25px" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+

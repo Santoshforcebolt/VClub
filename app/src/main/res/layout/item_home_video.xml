@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:paddingLeft="25px"
+    android:paddingRight="25px"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40px"
+        android:paddingBottom="40px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="10px"
+            android:lines="1"
+            android:text="复旦大学郑磊教授：我们需要开放有温度的数据"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_32"
+            android:textStyle="bold" />
+
+        <com.sky.widget.autolayout.widget.AutoCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            app:cardCornerRadius="@dimen/size_10">
+
+            <FrameLayout
+                android:id="@+id/layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.sky.widget.autolayout.widget.AutoCardView>
+        <!--<FrameLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="393px"
+            android:layout_marginTop="35px">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/ic_placeholder_2" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="154px"
+                android:layout_height="154px"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                app:layout_auto_basewidth="height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/play" />
+
+            <com.easyder.club.widget.FullJVideoPlayer
+                android:id="@+id/mFullJVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </FrameLayout>-->
+
+        <TextView
+            android:id="@+id/tv_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:lines="1"
+            android:text=" 9k views  09 JUL 2020 2:58 PM"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_22" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="495px"
+        android:layout_height="400px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/login_screen_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_select_language"
+            android:textColor="@color/colorFore"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:visibility="invisible"
+            android:text="CHOOSE LANGUAGE"
+            android:textColor="#4c4c4c"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_chinese"
+            android:layout_width="345px"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/selector_bg_language"
+            android:gravity="center"
+            android:text="@string/a_language_chinese"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="345px"
+            android:layout_height="80px"
+            android:layout_marginTop="34px"
+            android:background="@drawable/selector_bg_language"
+            android:gravity="center"
+            android:text="@string/a_language_english"
+            android:textColor="@color/selector_check_txt"
+            android:textSize="28px" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="101px"
+        android:layout_height="101px"
+        android:layout_marginTop="66px"
+        android:background="@drawable/close"
+        app:layout_auto_basewidth="height" />
+
+</LinearLayout>

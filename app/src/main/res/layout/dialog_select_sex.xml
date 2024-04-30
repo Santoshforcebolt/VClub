@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="654px"
+    android:layout_height="430px"
+    android:background="@drawable/shape_bg_white_r5"
+    android:orientation="vertical"
+    android:paddingLeft="40px"
+    android:paddingRight="40px">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60px"
+        android:layout_marginTop="60px"
+        android:gravity="center"
+        android:text="@string/a_select_sex"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_32" />
+
+    <TextView
+        android:id="@+id/tv_man"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@drawable/shape_border_gray_r88"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:text="@string/a_man"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_30" />
+
+    <TextView
+        android:id="@+id/tv_woman"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/shape_border_gray_r88"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:text="@string/a_woman"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_30" />
+
+</LinearLayout>

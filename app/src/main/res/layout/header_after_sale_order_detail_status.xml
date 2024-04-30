@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370px"
+        android:background="@color/colorFore"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="64px">
+
+        <ImageView
+            android:id="@+id/iv_order_status"
+            android:layout_width="142px"
+            android:layout_height="142px"
+            app:layout_auto_basewidth="height"
+            tools:src="@drawable/after_sale" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="@string/a_checking"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_38" />
+
+        <TextView
+            android:id="@+id/tv_status_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/a_one_day_complete"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:text="@string/a_cancel_after_sale"
+        android:visibility="visible" />
+</LinearLayout>

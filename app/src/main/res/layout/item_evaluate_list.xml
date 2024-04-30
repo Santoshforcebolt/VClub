@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:paddingLeft="25px"
+    android:paddingRight="25px"
+    android:showDividers="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal"
+        android:paddingBottom="20px">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_header"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_1"
+            app:layout_auto_basewidth="height"
+            app:sriv_border_color="@color/colorBack"
+            app:sriv_border_width="2px"
+            app:sriv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23px"
+            android:layout_marginBottom="10px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Sky"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_28"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Scored this whisky"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="0"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_28"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="points"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_28" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="13 Jun 2020 8:39 pm"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_24" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="英国伦敦 曼彻斯特城市学院"
+                android:textColor="#586B96"
+                android:textSize="@dimen/size_24" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="17px"
+            android:layout_height="33px"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_right" />
+
+    </LinearLayout>
+</LinearLayout>

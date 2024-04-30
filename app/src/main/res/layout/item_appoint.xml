@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="25px"
+    android:layout_marginTop="25px"
+    android:layout_marginRight="25px"
+    android:background="@drawable/shape_bg_white_r8"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:padding="25px"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            app:layout_auto_basewidth="height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="23px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="东城万达店"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                tools:text="东莞市东城区东纵路208号"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="预约成功"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_26" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="@string/a_appoint_arrive_time_"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginTop="25px"
+            android:text="@string/a_appoint_arrive_num_"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+
+        <TextView
+            android:id="@+id/tv_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_num"
+            android:layout_marginTop="25px"
+            android:text="@string/a_is_need_box_"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+
+        <TextView
+            android:id="@+id/tv_appoint"
+            android:layout_width="156px"
+            android:layout_height="57px"
+            android:layout_alignBottom="@+id/tv_box"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10px"
+            android:background="@drawable/shape_border_gray_r88"
+            android:gravity="center"
+            android:text="@string/a_cancel_appoint"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+    </RelativeLayout>
+
+</LinearLayout>

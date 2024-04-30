@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/SelectableRoundedImageView"
+        android:layout_width="138px"
+        android:layout_height="138px"
+        android:layout_marginRight="25px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_1"
+        app:layout_auto_basewidth="height"
+        app:sriv_border_color="@color/colorDivider"
+        app:sriv_border_width="5px"
+        app:sriv_oval="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_look_more"
+        android:layout_width="138px"
+        android:visibility="gone"
+        android:layout_height="138px"
+        android:background="@drawable/shape_bg_gray_dot"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_auto_basewidth="height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_look_more"
+            android:gravity="center"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_24" />
+
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="10px"
+            android:layout_marginTop="10px"
+            android:src="@drawable/to_right" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="282px"
+        android:background="#303642" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="67px"
+        android:orientation="vertical"
+        android:paddingLeft="34px"
+        android:paddingRight="34px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="103px">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_sending_goods"
+                android:textColor="@color/colorFore"
+                android:textSize="@dimen/size_40" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="顺丰快递  1265120365121"
+                android:textColor="@color/colorFore"
+                android:textSize="@dimen/size_28" />
+
+            <ImageView
+                android:layout_width="196px"
+                android:layout_height="103px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="36px"
+            android:layout_marginTop="36px"
+            android:background="@drawable/shape_bg_white_r8" />
+    </LinearLayout>
+
+</FrameLayout>

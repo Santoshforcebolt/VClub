@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="586px"
+    android:layout_height="386px"
+    android:background="@drawable/shape_bg_white_r5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/a_change_buy_way"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:padding="15px"
+            android:src="@drawable/close_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:background="@drawable/shape_bg_gray_r5"
+            android:gravity="center"
+            android:layout_marginTop="25px"
+            android:layout_marginBottom="25px"
+            android:text=""
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginBottom="45px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_gray_r5"
+            android:text="@string/a_cancel"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_30" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_brown_r5"
+            android:text="@string/a_confirm"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+    </LinearLayout>
+
+</LinearLayout>

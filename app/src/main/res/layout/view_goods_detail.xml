@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorFore"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="106px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:id="@+id/tv_total_enjoy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/a_buyer_enjoy"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <com.easyder.club.widget.DrawableTextView
+                android:id="@+id/dtv_enjoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10px"
+                android:text="@string/a_go_enjoy"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_28"
+                app:imageHeight="32px"
+                app:imageWidth="33px"
+                app:leftImage="@drawable/red_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_enjoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="218px"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:background="@drawable/shape_border_gray_r2"
+                android:divider="@drawable/shape_divider_line_light"
+                android:dividerPadding="36px"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="218px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_auto_basewidth="height">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_average_evaluate"
+                        android:textColor="@color/textLesser"
+                        android:textSize="@dimen/size_20" />
+
+                    <TextView
+                        android:id="@+id/tv_average_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/size_84" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@string/a_color_lever"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+
+                        <com.sky.widget.component.HorizontalProgressBar
+                            android:id="@+id/colorProgressBar"
+                            android:layout_width="208px"
+                            android:layout_height="10px"
+                            android:layout_marginLeft="30px"
+                            app:hpb_bg_color="@color/textLesser"
+                            app:hpb_max="100"
+                            app:hpb_pb_color="@color/colorBrown"
+                            app:hpb_progress="60" />
+
+                        <TextView
+                            android:id="@+id/tv_color_lever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="90"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@string/a_smell_lever"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+
+                        <com.sky.widget.component.HorizontalProgressBar
+                            android:id="@+id/smellProgressBar"
+                            android:layout_width="208px"
+                            android:layout_height="10px"
+                            android:layout_marginLeft="30px"
+                            app:hpb_bg_color="@color/textLesser"
+                            app:hpb_max="100"
+                            app:hpb_pb_color="@color/colorBrown"
+                            app:hpb_progress="60" />
+
+                        <TextView
+                            android:id="@+id/tv_smell_lever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="90"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@string/a_taste_lever"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+
+                        <com.sky.widget.component.HorizontalProgressBar
+                            android:id="@+id/tasteProgressBar"
+                            android:layout_width="208px"
+                            android:layout_height="10px"
+                            android:layout_marginLeft="30px"
+                            app:hpb_bg_color="@color/textLesser"
+                            app:hpb_max="100"
+                            app:hpb_pb_color="@color/colorBrown"
+                            app:hpb_progress="60" />
+
+                        <TextView
+                            android:id="@+id/tv_taste_lever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="90"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@string/a_rhyme_lever"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+
+                        <com.sky.widget.component.HorizontalProgressBar
+                            android:id="@+id/rhymeProgressBar"
+                            android:layout_width="208px"
+                            android:layout_height="10px"
+                            android:layout_marginLeft="30px"
+                            app:hpb_bg_color="@color/textLesser"
+                            app:hpb_max="100"
+                            app:hpb_pb_color="@color/colorBrown"
+                            app:hpb_progress="60" />
+
+                        <TextView
+                            android:id="@+id/tv_rhyme_lever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="90"
+                            android:textColor="@color/textMinor"
+                            android:textSize="@dimen/size_22" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/shape_divider_line"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <TextView
+                android:id="@+id/tv_look_more"
+                android:layout_width="200px"
+                android:layout_height="60px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45px"
+                android:background="@drawable/shape_border_gray_r88"
+                android:gravity="center"
+                android:text="@string/a_look_all"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_spec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorFore"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical"
+            android:paddingLeft="25px"
+            android:visibility="gone"
+            android:text="@string/a_spec_param"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <LinearLayout
+            android:id="@+id/layout_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25px"
+            android:background="@drawable/shape_border_gray_r2"
+            android:divider="@drawable/shape_divider_line"
+            android:orientation="vertical"
+            android:showDividers="middle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/colorFore"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="25px"
+            android:gravity="center_vertical"
+            android:text="@string/a_goods_detail"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <com.easyder.club.widget.RollingWebView
+            android:id="@+id/mRollingWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:lineSpacingExtra="8px"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_44"
+                tools:text="全球最赚钱漫画平台Piccoma B轮融资3亿美元" />
+
+            <TextView
+                android:id="@+id/tv_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:lines="1"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_26"
+                tools:text=" 9k views  09 JUL 2020 2:58 PM" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/shape_divider_line_light" />
+        </LinearLayout>
+
+        <com.easyder.club.widget.RollingWebView
+            android:id="@+id/mRollingWebView"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_like"
+            android:layout_width="146px"
+            android:layout_height="146px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:background="@drawable/selector_like_circle"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_auto_basewidth="height">
+
+            <ImageView
+                android:layout_width="47px"
+                android:layout_height="47px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_like"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:text="0"
+                android:textColor="@color/selector_tab_text"
+                android:textSize="@dimen/size_26" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:text="@string/a_goods_article_tip"
+            android:textSize="@dimen/size_26" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

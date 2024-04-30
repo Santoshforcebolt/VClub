@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="25px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/shape_bg_white_r8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="3px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_extract_to_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="34px"
+            android:layout_height="38px"
+            android:layout_marginLeft="18px"
+            app:layout_auto_basewidth="height"
+            android:src="@drawable/earnings" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_integral"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_ratio"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:lines="1"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_30"
+            tools:text="(1分收益=1元)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_bg_white_r8"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <EditText
+            android:id="@+id/et_earnings"
+            android:layout_width="match_parent"
+            android:layout_height="135px"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/a_input_earnings"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="10"
+            android:textColor="@color/textMain"
+            android:textColorHint="#cccccc"
+            android:textSize="78px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/shape_divider_line_light" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px">
+
+            <TextView
+                android:id="@+id/tv_extract_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/a_can_extract_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <TextView
+                android:id="@+id/tv_extract_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/a_all_extract"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_26" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_extract"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="55px"
+            android:background="@drawable/selector_bg_enable"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:enabled="false"
+            android:text="@string/a_extract"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_32" />
+    </LinearLayout>
+
+
+</LinearLayout>

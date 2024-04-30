@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="25px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.00元现金券"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_32" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:text="5.00元现金券"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+
+            <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="使用期限2017.09.05-2018.03.05"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bg_border_brown"
+            android:enabled="true"
+            android:gravity="center"
+            android:paddingLeft="35px"
+            android:paddingTop="10px"
+            android:paddingRight="35px"
+            android:paddingBottom="10px"
+            android:text="@string/a_get"
+            android:textColor="@color/selector_enable_brown"
+            android:textSize="@dimen/size_26" />
+    </LinearLayout>
+</LinearLayout>

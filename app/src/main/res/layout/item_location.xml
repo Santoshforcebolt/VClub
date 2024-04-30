@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="35px"
+        android:layout_marginRight="25px"
+        android:text="769文化创意园"
+        android:textColor="@color/textSuper"
+        android:textSize="@dimen/size_32" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="25px"
+        android:layout_marginBottom="35px"
+        android:text="广东省东莞市风景街万科769文化1栋18铺"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_24" />
+
+
+</LinearLayout>

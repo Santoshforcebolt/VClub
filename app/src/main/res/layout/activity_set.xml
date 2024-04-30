@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFore"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="45px"
+    android:paddingRight="45px">
+
+    <ImageView
+        android:layout_width="148px"
+        android:layout_height="197px"
+        android:layout_marginTop="90px"
+        android:src="@drawable/set_logo" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34px"
+        android:text="Version 1.0.0"
+        android:textColor="@color/textSuper"
+        android:textSize="@dimen/size_32" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="110px"
+        android:background="@drawable/shape_divider_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_about"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/a_about_us"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_32" />
+
+        <ImageView
+            android:layout_width="13px"
+            android:layout_height="24px"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/arrow_right_little" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_divider_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_update"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/a_check_new_version"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_32" />
+
+        <ImageView
+            android:layout_width="13px"
+            android:layout_height="24px"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/arrow_right_little" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_divider_line" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="400px"
+        android:layout_height="100px"
+        android:layout_marginTop="110px"
+        android:gravity="center"
+        android:text="@string/a_logout"
+        android:textColor="@color/textSuper"
+        android:textSize="@dimen/size_32" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_copyright_tip1"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/a_copyright_tip2"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/a_copyright_tip3"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

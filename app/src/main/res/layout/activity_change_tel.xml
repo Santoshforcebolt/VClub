@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_margin="25px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <com.easyder.club.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_your_tel_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30"
+            app:imageHeight="30px"
+            app:imageWidth="20px"
+            app:leftImage="@drawable/ic_phone" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/a_set_new_tel"
+            android:lines="1"
+            android:text=""
+            android:inputType="phone"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:background="@drawable/shape_bg_white_r5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <com.easyder.club.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_verify_code_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30"
+            app:imageHeight="22px"
+            app:imageWidth="28px"
+            app:leftImage="@drawable/ic_code" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/a_input_verify_code"
+            android:lines="1"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_get_msg"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:text="@string/a_next" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="115px"
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5px"
+            android:layout_marginBottom="20px"
+            android:text="@string/a_tel_unused_tip"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/tel_gray"
+            android:drawablePadding="5px"
+            android:text="400-888-8888"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_24" />
+    </LinearLayout>
+
+
+</LinearLayout>

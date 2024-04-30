@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25px"
+    android:layout_marginRight="25px"
+    android:layout_marginTop="20px"
+    android:background="@drawable/shape_bg_white_r5"
+    android:padding="25px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南城汇一城店"
+            android:textColor="@color/textMain"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="23px"
+            android:layout_marginLeft="18px"
+            android:background="@color/colorBrown" />
+
+        <TextView
+            android:id="@+id/tv_status_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:text="2536m"
+            android:textColor="@color/colorBrown"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_store_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:text="东莞市东城区东纵路208号"
+        android:textColor="@color/textMinor"
+        android:textSize="22px" />
+
+</RelativeLayout>

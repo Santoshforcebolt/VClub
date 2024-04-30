@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">widget</string>
+    <string name="pulling">下拉刷新</string>
+    <string name="pulling_refresh">松开加载</string>
+    <string name="pulling_refreshing">正在加载</string>
+    <string name="pulling_refreshfinish">加载完成</string>
+    <string name="a_please_choose_browser">请选择浏览器</string>
+    <string name="a_skip_browser_error_tip">链接错误或无浏览器</string>
+    <string name="a_loading">加载中</string>
+</resources>

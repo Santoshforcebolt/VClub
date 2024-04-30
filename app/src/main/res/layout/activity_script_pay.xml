@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/mCardInputWidget"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="25px"
+        android:background="@drawable/shape_border_red_r5"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:paddingRight="20px" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="38px"
+        android:layout_marginRight="25px"
+        android:background="@drawable/shape_bg_brown_r8"
+        android:text="@string/a_now_pay"
+        android:textColor="@color/colorFore"
+        android:textSize="@dimen/size_34" />
+</LinearLayout>

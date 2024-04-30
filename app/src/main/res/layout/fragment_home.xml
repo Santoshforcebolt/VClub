@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorFore" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/colorFore"
+        android:paddingLeft="43px">
+
+        <LinearLayout
+            android:id="@+id/ll_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:src="@drawable/selector_switch_language"
+                app:layout_auto_basewidth="height" />
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="9px"
+                android:layout_marginLeft="14px"
+                android:src="@drawable/ic_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="400px"
+            android:maxLines="1"
+            android:text="VClub"
+            android:textColor="@color/textSuper"
+            android:textSize="36px" />
+
+        <FrameLayout
+            android:id="@+id/fl_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="25px">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                app:layout_auto_basewidth="height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/message" />
+
+            <TextView
+                android:layout_width="12px"
+                android:layout_height="12px"
+                app:layout_auto_basewidth="height"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:background="@drawable/shape_tab_dot" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/common_refresh" />
+
+</LinearLayout>

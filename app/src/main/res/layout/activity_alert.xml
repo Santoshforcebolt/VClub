@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sky.widget.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:winds="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#00000000"
+    android:layout_height="match_parent">
+
+    <com.sky.widget.autolayout.AutoRelativeLayout
+        android:layout_width="500px"
+        android:layout_height="300px"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_bg_white_r5"
+        android:orientation="vertical"
+        android:padding="30px"
+        winds:layout_auto_basewidth="height">
+
+        <TextView
+            android:id="@+id/tv_logout_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_logout_tip"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:id="@+id/tv_login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_logout_tip"
+            android:layout_marginTop="30px"
+            android:textColor="@color/textMinor"
+            android:text="@string/a_login_tip"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/a_re_login"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_24" />
+
+
+    </com.sky.widget.autolayout.AutoRelativeLayout>
+
+</com.sky.widget.autolayout.AutoFrameLayout>

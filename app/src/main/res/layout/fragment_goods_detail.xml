@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/shape_divider_line_light"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/mBGABanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="750px"
+                    android:background="@drawable/ic_placeholder_1"
+                    app:banner_pageChangeDuration="1000"
+                    app:banner_placeholderDrawable="@drawable/ic_placeholder_1"
+                    app:banner_pointAutoPlayAble="true"
+                    app:banner_pointDrawable="@drawable/selector_banner_point"
+                    app:banner_pointLeftRightMargin="15px"
+                    app:banner_pointTopBottomMargin="15px"
+                    app:banner_transitionEffect="defaultEffect" />
+
+                <ImageView
+                    android:id="@+id/iv_sold_out"
+                    android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sold_out"
+                    android:visibility="gone"
+                    app:layout_auto_basewidth="height" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorFore"
+                android:orientation="vertical"
+                android:padding="25px"
+                android:paddingTop="40px">
+
+                <LinearLayout
+                    android:id="@+id/ll_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="62px"
+                    android:background="@drawable/limit_buy_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85px"
+                        android:layout_weight="1"
+                        android:text="@string/a_limit_skill"
+                        android:textColor="@color/colorFore"
+                        android:textSize="@dimen/size_28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="85px"
+                        android:text="@string/a_limit_skill"
+                        android:textColor="@color/colorFore"
+                        android:textSize="@dimen/size_28" />
+
+                    <com.easyder.club.widget.SnapUpCountDownTimerView
+                        android:id="@+id/mSnapUpCountDownTimerView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginRight="24px"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="£"
+                        android:textColor="@color/colorBrown"
+                        android:textSize="@dimen/size_34" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:text="0.00"
+                        android:textColor="@color/colorBrown"
+                        android:textSize="@dimen/size_56" />
+
+                    <TextView
+                        android:id="@+id/tv_original_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="0.00"
+                        android:textColor="@color/textLesser"
+                        android:textSize="@dimen/size_30" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8px"
+                    android:text="尊尼获加（Johnnie Walker）洋酒 威士忌 黑方 黑牌 调配型苏格兰威士忌 700ml"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/size_34" />
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30px">
+
+                    <TextView
+                        android:id="@+id/tv_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/a_yet_sale_"
+                        android:textColor="@color/textLesser"
+                        android:textSize="@dimen/size_26" />
+
+                    <TextView
+                        android:id="@+id/tv_repertory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:text="@string/a_repertory_"
+                        android:textColor="@color/textLesser"
+                        android:textSize="@dimen/size_26" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_get_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="20px"
+                android:background="@color/colorFore"
+                android:paddingLeft="25px"
+                android:paddingRight="25px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/a_get_discount_ticket"
+                    android:textColor="@color/textMinor"
+                    android:textSize="@dimen/size_30" />
+
+                <ImageView
+                    android:layout_width="12px"
+                    android:layout_height="22px"
+                    android:layout_gravity="center_vertical|right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arrow_right_little" />
+            </FrameLayout>
+
+            <include layout="@layout/view_goods_detail" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/colorFore"
+        android:divider="@drawable/shape_divider_line_light"
+        android:dividerPadding="18px"
+        android:gravity="center_vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/ll_car"
+            android:layout_width="126px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55px">
+
+                <ImageView
+                    android:layout_width="38px"
+                    android:layout_height="36px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/shop_car" />
+
+                <TextView
+                    android:id="@+id/tv_order_dot"
+                    android:layout_width="28px"
+                    android:layout_height="28px"
+                    android:layout_gravity="right|top"
+                    android:layout_marginLeft="40px"
+                    android:background="@drawable/shape_tab_dot"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_18" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_shop_car"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_22" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#474C55"
+            android:text="@string/a_add_car"
+            android:textAllCaps="false"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorBrown"
+            android:text="@string/a_now_buy"
+            android:textAllCaps="false"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+</LinearLayout>

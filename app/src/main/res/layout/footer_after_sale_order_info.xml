@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_after_sale_type_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_refund_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_exchange_goods"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_exit_amount_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="£0.00"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="88px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="start"
+            android:paddingTop="32px"
+            android:text="@string/a_after_sale_reason_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="10px">
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="显气色显肤白，好像有一点点划痕？很少一点点基本看不到"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/layout_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_refund_order_no_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="40051284690562"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_apply_time_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_apply_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="2019.08.04 16:42"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+</LinearLayout>

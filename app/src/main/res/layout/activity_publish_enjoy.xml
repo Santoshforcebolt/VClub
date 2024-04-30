@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:background="@color/colorFore"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="25px">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/upload_product"
+                app:layout_auto_basewidth="height" />
+
+            <EditText
+                android:id="@+id/et_product"
+                android:layout_width="0dp"
+                android:layout_height="140px"
+                android:layout_marginLeft="25px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_edit_bg"
+                android:enabled="true"
+                android:gravity="start"
+                android:hint="@string/a_input_product_name"
+                android:padding="20px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/shape_divider_line_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_color_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <SeekBar
+                    android:id="@+id/colorSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="75px"
+                    android:layout_marginLeft="35px"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/tv_color_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16px"
+                    android:text="100"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_color_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="155px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_color_evaluate"
+                android:padding="25px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_smell_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <SeekBar
+                    android:id="@+id/smellSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="75px"
+                    android:layout_marginLeft="35px"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/tv_smell_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16px"
+                    android:text="100"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_smell_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="155px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_smell_evaluate"
+                android:padding="25px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_taste_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <SeekBar
+                    android:id="@+id/tasteSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="75px"
+                    android:layout_marginLeft="35px"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/tv_taste_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16px"
+                    android:text="100"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_taste_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="155px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_taste_evaluate"
+                android:padding="25px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_rhyme_lever"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <SeekBar
+                    android:id="@+id/rhymeSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="75px"
+                    android:layout_marginLeft="35px"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/tv_rhyme_lever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16px"
+                    android:text="100"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_28" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_rhyme_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="155px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_rhyme_evaluate"
+                android:padding="25px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/size_32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_total_evaluate"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_total_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="185px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_rhyme_evaluate"
+                android:padding="25px"
+                android:textColor="@color/textMain"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:orientation="vertical"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+            <TextView
+                android:id="@+id/tv_share_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_show_picture"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_28" />
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_show_picture"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_picture_max_tip"
+                    android:textColor="@color/textLesser"
+                    android:textSize="@dimen/size_28" />
+
+            </LinearLayout>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="218px"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@drawable/shape_divider_line_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="35px"
+                    android:layout_height="41px"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:layout_weight="1"
+                    android:text="@string/a_current_location"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_30" />
+
+                <ImageView
+                    android:layout_width="13px"
+                    android:layout_height="23px"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:background="@color/colorBack"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <Button
+                android:id="@+id/btn_commit"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/a_commit" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

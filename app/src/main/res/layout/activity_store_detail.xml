@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_divider_line_light"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/layout_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFore"
+            android:divider="@drawable/shape_divider_line_light"
+            android:orientation="vertical"
+            android:showDividers="middle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_backup_"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/a_need_remark_input"
+                android:singleLine="true"
+                android:textColor="@color/textSuper"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/a_total_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="£0.00"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/a_discount_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="£0.00"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/a_actual_pay_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_actual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="£0.00"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/colorFore"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/a_create_order_time_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="2020-06-06 0:00"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

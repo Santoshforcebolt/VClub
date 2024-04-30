@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75px"
+    android:divider="@drawable/shape_divider_line"
+    android:orientation="horizontal"
+    android:showDividers="beginning|middle|end">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="215px"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="35px"
+        android:paddingRight="20px"
+        android:text="@string/a_kind"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_26" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="35px"
+        android:paddingRight="20px"
+        android:text="Single Malt"
+        android:textColor="@color/textMinor"
+        android:textSize="@dimen/size_26" />
+</LinearLayout>

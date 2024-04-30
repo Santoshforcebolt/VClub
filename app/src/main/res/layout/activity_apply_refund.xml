@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/shape_divider_line_light"
+            android:orientation="vertical"
+            android:showDividers="middle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:text="@string/a_after_sale_type_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_exit_money"
+                android:layout_width="148px"
+                android:layout_height="68px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/selector_bg_brown_gray"
+                android:gravity="center"
+                android:text="@string/a_only_exit_money"
+                android:textColor="@color/selector_white_gray"
+                android:textSize="@dimen/size_26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_exit_all"
+                android:layout_width="148px"
+                android:layout_height="68px"
+                android:layout_marginLeft="24px"
+                android:background="@drawable/selector_bg_brown_gray"
+                android:gravity="center"
+                android:text="@string/a_exit_money_goods"
+                android:textColor="@color/selector_white_gray"
+                android:textSize="@dimen/size_26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="148px"
+                android:layout_height="68px"
+                android:layout_marginLeft="24px"
+                android:background="@drawable/selector_bg_brown_gray"
+                android:gravity="center"
+                android:text="@string/a_exchange_goods"
+                android:textColor="@color/selector_white_gray"
+                android:textSize="@dimen/size_26"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="24px"
+                android:text="@string/a_exit_amount_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="0dp"
+                android:enabled="false"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textColorHint="@color/textLesser"
+                android:textSize="@dimen/size_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/colorFore"
+            android:orientation="vertical"
+            android:paddingLeft="24px"
+            android:paddingRight="24px"
+            android:paddingBottom="24px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@color/colorFore"
+                android:gravity="center_vertical"
+                android:text="@string/a_reason_describe_"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <EditText
+                android:id="@+id/et_reason"
+                android:layout_width="match_parent"
+                android:layout_height="211px"
+                android:background="@drawable/shape_bg_gray_r5"
+                android:gravity="start"
+                android:hint="@string/a_input_reason_describe"
+                android:padding="20px"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFore"
+            android:paddingLeft="24px"
+            android:paddingBottom="24px" />
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="92px"
+            android:layout_margin="24px"
+            android:background="@drawable/shape_bg_brown_r5"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/a_commit_apply"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_30" />
+
+    </LinearLayout>
+
+</ScrollView>

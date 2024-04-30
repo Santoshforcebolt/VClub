@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLLAfterSaleInputExpressInfoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_delivery_company_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <EditText
+            android:id="@+id/et_express_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/a_please_choose_delivery_company"
+            android:paddingLeft="44px"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25px"
+            android:text=">"
+            android:textSize="@dimen/size_30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_marginTop="1px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_delivery_no_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <EditText
+            android:id="@+id/et_express_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/a_input_delivery_no"
+            android:paddingLeft="44px"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:layout_marginBottom="25px"
+        android:text="@string/a_confirm_send_return" />
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="270px"
+    android:layout_marginTop="1px"
+    android:background="@drawable/shape_bg_white_top_r8"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15px"
+    android:paddingRight="15px">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/iv_image"
+        android:layout_width="240px"
+        android:layout_height="240px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_1"
+        app:layout_auto_basewidth="height"
+        app:sriv_left_bottom_corner_radius="5px"
+        app:sriv_left_top_corner_radius="5px"
+        app:sriv_right_bottom_corner_radius="5px"
+        app:sriv_right_top_corner_radius="5px" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="240px"
+        android:layout_marginLeft="20px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5px"
+            android:lines="2"
+            android:maxLines="2"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28"
+            tools:text="本利亚克克莱嘉赫单本利亚克克莱嘉赫单一麦芽苏格兰一麦芽苏格兰" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="£0"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/size_32" />
+
+            <TextView
+                android:id="@+id/tv_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="£0"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="260px"
+                android:layout_height="26px">
+
+                <com.sky.widget.component.HorizontalProgressBar
+                    android:id="@+id/mHorizontalProgressBar"
+                    android:layout_width="260px"
+                    android:layout_height="26px"
+                    app:hpb_bg_color="#FFAFA6"
+                    app:hpb_pb_color="#FE0908"
+                    app:hpb_progress="50" />
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26px"
+                    android:layout_marginLeft="50px"
+                    android:gravity="center_vertical"
+                    android:text="50%"
+                    android:textColor="@color/colorFore"
+                    android:textSize="@dimen/size_20" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_20"
+                tools:text="剩余1200件" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingLeft="25px"
+                android:text="买一送一"
+                android:textColor="@color/colorFore"
+                android:textSize="@dimen/size_24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="132px"
+                android:layout_height="match_parent"
+                android:background="@drawable/now_buy_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/a_now_buy"
+                android:textColor="@color/colorFore"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

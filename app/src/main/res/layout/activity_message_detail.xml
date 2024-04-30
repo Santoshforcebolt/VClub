@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:lineSpacingExtra="8px"
+                android:text="全球最赚钱漫画平台Piccoma B轮融资3亿美元"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_44" />
+
+            <TextView
+                android:id="@+id/tv_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:lines="1"
+                android:text=" 9k views  09 JUL 2020 2:58 PM"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_26" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/shape_divider_line_light" />
+
+        </LinearLayout>
+
+        <com.easyder.club.widget.RollingWebView
+            android:id="@+id/mRollingWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

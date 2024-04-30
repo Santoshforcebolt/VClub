@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20px"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_delivery_company_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_express_company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="44px"
+            android:text="顺丰快递"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92px"
+        android:layout_marginTop="1px"
+        android:background="@color/colorFore"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="@string/a_delivery_no_"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_express_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="44px"
+            android:text="654065180362"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_look"
+            android:layout_width="162px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="24px"
+            android:background="@drawable/shape_border_brown_r8"
+            android:gravity="center"
+            android:text="@string/a_look_delivery"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_28" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="25px"
+        android:text="@string/a_confirm_receive" />
+</LinearLayout>

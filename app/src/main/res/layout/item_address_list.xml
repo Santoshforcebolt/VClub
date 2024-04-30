@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/line_address" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFore"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingTop="30px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxWidth="400px"
+            android:text="name"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="17607694693"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="15px"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="广东省 东莞市东城区769文化创意园2栋3楼，易得网络科技有限公司"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_26" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_below="@id/line"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.easyder.club.widget.DrawableTextView
+                android:id="@+id/dtv_select"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:drawablePadding="15px"
+                android:gravity="center_vertical"
+                android:text="@string/a_default_address"
+                android:textColor="@color/textMinor"
+                android:textSize="@dimen/size_26"
+                app:imageHeight="38px"
+                app:imageWidth="38px"
+                app:leftImage="@drawable/selector_check" />
+
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:padding="10px"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="62px"
+                android:layout_height="62px"
+                android:padding="10px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:src="@drawable/delete" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

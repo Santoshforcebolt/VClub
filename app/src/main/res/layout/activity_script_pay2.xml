@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="81px">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="ePayment"
+            android:textColor="@color/black"
+            android:textSize="35px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorDivider" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="85px"
+            android:gravity="center_vertical"
+            android:text="Card Holder Name:"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/edt_card_holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:background="@drawable/shape_bg_gray_r5"
+            android:maxEms="50"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="85px"
+            android:gravity="center_vertical"
+            android:text="Card Number:"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/edt_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:background="@drawable/shape_bg_gray_r5"
+            android:inputType="number"
+            android:maxEms="50"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="85px"
+            android:gravity="center_vertical"
+            android:text="CVV:"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/edt_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:background="@drawable/shape_bg_gray_r5"
+            android:inputType="number"
+            android:maxEms="50"
+            android:maxLines="1"
+            android:paddingLeft="20px"
+            android:paddingRight="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="85px"
+            android:gravity="center_vertical"
+            android:text="Expiry Date:"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/shape_bg_gray_r5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="40px"
+                    android:gravity="center_vertical"
+                    android:text="Month:"
+                    android:textColor="@color/textSuper"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/picker_month"
+                    android:layout_width="100px"
+                    android:layout_height="match_parent"
+                    android:hint="input month"
+                    android:textColor="@color/textSuper"
+                    android:textColorHint="@color/textMain"
+                    android:textSize="@dimen/size_26" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="85px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="40px"
+                    android:gravity="center_vertical"
+                    android:text="Year:"
+                    android:textColor="@color/textSuper"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/picker_year"
+                    android:layout_width="100px"
+                    android:layout_height="match_parent"
+                    android:hint="input month"
+                    android:textColor="@color/textSuper"
+                    android:textColorHint="@color/textMain"
+                    android:textSize="@dimen/size_26" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<EditText-->
+        <!--android:id="@+id/edt_expiry_date"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70px"-->
+        <!--android:background="@drawable/u_edt_input_selector"-->
+        <!--android:hint="like 201601"-->
+        <!--android:inputType="number"-->
+        <!--android:maxEms="50"-->
+        <!--android:maxLines="1"-->
+        <!--android:paddingLeft="20px"-->
+        <!--android:paddingRight="20px"-->
+        <!--android:textColorHint="@color/CDCDCD"/>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@+id/middle"
+        android:background="@color/colorBack">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="40px"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:gravity="center"
+                android:text="Need pay"
+                android:textColor="@color/textSuper"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="S$ 00"
+                android:textColor="@color/textSuper"
+                android:textSize="40px" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_above="@id/bottom"-->
+    <!--android:layout_below="@+id/middle"-->
+    <!--android:background="@color/backgroudgray"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBrown"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="35px" />
+
+    </LinearLayout>
+
+</RelativeLayout>

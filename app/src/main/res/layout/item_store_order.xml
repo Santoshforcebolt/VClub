@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15px"
+    android:background="@color/colorFore"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <ImageView
+            android:layout_width="26px"
+            android:layout_height="26px"
+            android:layout_marginRight="5px"
+            android:background="@drawable/order"
+            app:layout_auto_basewidth="height" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Name"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="10px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="status"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_28" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25px"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25px">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_1"
+            app:layout_auto_basewidth="height"
+            app:sriv_left_bottom_corner_radius="2px"
+            app:sriv_left_top_corner_radius="2px"
+            app:sriv_right_bottom_corner_radius="2px"
+            app:sriv_right_top_corner_radius="2px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_toRightOf="@+id/iv_goods"
+            android:ellipsize="middle"
+            android:maxLines="2"
+            android:text="name"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_alignBottom="@+id/iv_goods"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="¥0.00"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/size_30" />
+
+        <TextView
+            android:id="@+id/tv_spec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_price"
+            android:layout_marginLeft="5px"
+            android:layout_toRightOf="@+id/tv_price"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/a_default_spec"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_spec"
+            android:layout_marginLeft="5px"
+            android:layout_toRightOf="@+id/tv_spec"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="x0"
+            android:textColor="@color/textLesser"
+            android:textSize="@dimen/size_24" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:lines="1"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/size_26"
+        tools:text="共1件 实付¥0.00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="164px"
+            android:layout_height="64px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/shape_border_gray_r5"
+            android:text="@string/a_cancel_order"
+            android:textColor="@color/textMain"
+            android:textSize="@dimen/size_28" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="164px"
+            android:layout_height="64px"
+            android:background="@drawable/shape_border_red_r5"
+            android:text="@string/a_now_pay"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_28" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

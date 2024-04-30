@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorRed</color>
+    <color name="colorPrimaryDark">@color/textSuper</color>
+    <color name="colorAccent">@color/colorRed</color>
+
+    <color name="colorState">#0091EA</color>
+    <color name="colorGreen">#35a24e</color>
+    <color name="colorBackMinor">#FDFDFD</color>
+    <color name="colorDivider">#EEEEEE</color>
+    <color name="colorPressed">#D9D9D9</color>
+
+    <color name="colorBrown">#C5995B</color>
+    <color name="colorBG">#2C3340</color>
+    <color name="colorYellow">#FFE400</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sky.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="415px"
+    android:layout_height="250px"
+    android:background="@color/colorFore"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:gravity="center"
+        android:text="我是弹窗内容"
+        android:textColor="@color/textMain"
+        android:textSize="18px" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="175px"
+        android:layout_height="50px"
+        android:layout_gravity="center_horizontal"
+
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/colorFore"
+        android:textSize="18px" />
+
+</com.sky.widget.autolayout.AutoLinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:padding="15px"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="400px"
+            android:maxLines="1"
+            android:text="@string/a_now_table"
+            android:textColor="@color/textSuper"
+            android:textSize="@dimen/size_36" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="25px">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a_my_appoint"
+                android:textColor="@color/textSuper"
+                android:textSize="@dimen/size_28"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/view_dot_right"
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:layout_toRightOf="@+id/tv_right"
+                android:background="@drawable/shape_tab_dot"
+                android:visibility="gone"
+                app:layout_auto_basewidth="height" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:background="#E9BD60"
+        android:gravity="center"
+        android:text="需提前1天提交预约申请，成功预约可获增20积分"
+        android:textColor="@color/colorFore"
+        android:textSize="@dimen/size_26"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="25px">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="30px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/appoint_store"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:gravity="center"
+                android:text="@string/a_appoint_store"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_store"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right_little"
+                android:drawablePadding="20px"
+                android:gravity="center_vertical|right"
+                android:hint="@string/a_not_set"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="12"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="25px">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="28px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arrive_num"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:gravity="center"
+                android:text="@string/a_arrive_num"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <EditText
+                android:id="@+id/et_arrive_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/a_input_arrive_num"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="12"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25px"
+            android:paddingRight="25px">
+
+            <ImageView
+                android:layout_width="22px"
+                android:layout_height="26px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/is_box"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/a_is_need_box"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <ImageView
+                android:id="@+id/iv_is_box"
+                android:layout_width="100px"
+                android:layout_height="48px"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_switch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="25px">
+
+            <ImageView
+                android:layout_width="26px"
+                android:layout_height="26px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/time"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:gravity="center"
+                android:text="@string/a_arrive_time"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_30" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@drawable/arrow_right_little"
+                android:drawablePadding="20px"
+                android:gravity="center_vertical|right"
+                android:hint="@string/a_not_set"
+                android:lines="1"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_26" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="414px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="start"
+            android:hint="@string/a_remark_service_tip"
+            android:padding="20px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textLesser"
+            android:textSize="@dimen/size_28" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="38px"
+        android:text="@string/a_now_commit" />
+
+
+</LinearLayout>

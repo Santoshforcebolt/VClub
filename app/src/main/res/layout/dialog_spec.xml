@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="500px"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:background="@color/colorFore"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="235px"
+                android:orientation="vertical"
+                android:paddingTop="25px"
+                android:paddingRight="20px">
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10px"
+                    android:padding="10px"
+                    android:src="@drawable/close_gray" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColor="@color/textSuper"
+                    android:textSize="@dimen/size_26" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="10px"
+                    android:text="0.00"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/size_28" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="35px"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:id="@+id/edit_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_number_"
+                    android:textColor="@color/colorBrown"
+                    android:textSize="@dimen/size_26" />
+
+                <TextView
+                    android:id="@+id/tvStock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="(库存1000件)"
+                    android:textColor="@color/textLesser"
+                    android:textSize="@dimen/size_24"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_operate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_goods"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_reduce"
+                        android:layout_width="53px"
+                        android:layout_height="53px"
+                        android:background="@drawable/selector_reduce"
+                        app:layout_auto_basewidth="height" />
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="53px"
+                        android:gravity="center"
+                        android:maxWidth="150px"
+                        android:minWidth="60px"
+                        android:text="0"
+                        android:textColor="@color/textMinor"
+                        android:textSize="@dimen/size_26" />
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="53px"
+                        android:layout_height="53px"
+                        android:background="@drawable/selector_add"
+                        app:layout_auto_basewidth="height" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="30px"
+            android:contentDescription="@null"
+            app:layout_auto_basewidth="height"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_placeholder_1"
+            app:sriv_border_color="@color/colorDivider"
+            app:sriv_border_width="1px"
+            app:sriv_left_bottom_corner_radius="5px"
+            app:sriv_left_top_corner_radius="5px"
+            app:sriv_right_bottom_corner_radius="5px"
+            app:sriv_right_top_corner_radius="5px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorFore"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_below="@+id/lay_spec"
+        android:background="@drawable/shape_bg_brown_r5"
+        android:gravity="center"
+        android:text="@string/a_confirm"
+        android:textColor="@color/colorFore"
+        android:textSize="30px" />
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="303px"
+        android:background="@drawable/integral_bg"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65px"
+            android:text="@string/a_my_balance_pound"
+            android:textColor="@color/colorFore"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="20px"
+            android:text="000"
+            android:textColor="@color/colorFore"
+            android:textSize="90px" />
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="128px"
+            android:layout_height="60px"
+            android:layout_alignBottom="@+id/tv_balance"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_bg_white_r8"
+            android:gravity="center"
+            android:text="@string/a_recharge"
+            android:lines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_28" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020年5月"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/size_28" />
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18px"
+                android:text="@string/a_income_"
+                android:visibility="gone"
+                android:textColor="@color/textLesser"
+                android:textSize="@dimen/size_24" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            app:layout_auto_basewidth="height"
+            android:src="@drawable/calendar" />
+
+    </LinearLayout>
+
+    <include layout="@layout/common_refresh" />
+
+
+</LinearLayout>

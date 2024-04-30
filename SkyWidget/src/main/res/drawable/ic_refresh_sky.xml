@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/ic_refresh_sky1"
+        android:duration="160"
+        />
+    <item
+        android:drawable="@drawable/ic_refresh_sky2"
+        android:duration="160"/>
+    <item
+        android:drawable="@drawable/ic_refresh_sky3"
+        android:duration="160"/>
+
+    <item
+        android:drawable="@drawable/ic_refresh_sky4"
+        android:duration="160"/>
+
+</animation-list>

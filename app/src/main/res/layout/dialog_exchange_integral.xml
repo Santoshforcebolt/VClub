@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="650px"
+    android:background="@color/colorBack"
+    android:divider="@drawable/shape_divider_line_light"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/a_gift_exchange"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_28" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_gravity="right|center_vertical"
+            android:padding="15px"
+            android:src="@drawable/close_gray" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="name"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_28" />
+
+        <TextView
+            android:id="@+id/tv_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text="@string/a_look_store"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size_28" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="10px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <com.easyder.club.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/a_need_integral_"
+            android:textColor="@color/textMinor"
+            android:drawablePadding="10px"
+            android:textSize="@dimen/size_28"
+            app:imageHeight="37px"
+            app:imageWidth="37px"
+            app:leftImage="@drawable/integral_red" />
+
+        <TextView
+            android:id="@+id/tv_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/size_30" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="10px"
+        android:background="@color/colorFore"
+        android:orientation="horizontal"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <com.easyder.club.widget.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="1"
+            android:drawablePadding="10px"
+            android:maxLines="1"
+            android:text="@string/a_can_use_integral_"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_28"
+            app:imageHeight="37px"
+            app:imageWidth="37px"
+            app:leftImage="@drawable/integral_red" />
+
+        <TextView
+            android:id="@+id/tv_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:text="0"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_30" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="10px"
+        android:background="@color/colorFore"
+        android:orientation="vertical"
+        android:paddingBottom="10px"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:paddingTop="10px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/a_use_rule"
+            android:textColor="@color/textMinor"
+            android:textSize="@dimen/size_24" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:textColor="@color/textMinor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_margin="25px"
+        android:text="@string/a_now_exchange"
+        android:background="@drawable/shape_bg_red_r88"
+        android:textColor="@color/colorFore"
+        android:textSize="@dimen/size_28" />
+
+
+</LinearLayout>
